@@ -4,7 +4,7 @@ document.getElementById("login-btn").addEventListener("click", () => {
     const password = document.getElementById("password").value;
 
     if (email && password) {
-        window.location.href = "/dashboard"; // Redirect to dashboard
+        window.location.href = "/static/dashboard.html"; // Redirect to dashboard
     } else {
         alert("Please enter your email and password.");
     }
