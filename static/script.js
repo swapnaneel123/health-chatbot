@@ -1,14 +1,17 @@
 // Login Page
-document.getElementById("login-btn").addEventListener("click", () => {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+const loginBtn = document.getElementById("login-btn");
+if (loginBtn) {
+    loginBtn.addEventListener("click", () => {
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
 
-    if (email && password) {
-        window.location.href = "/static/dashboard.html"; // Redirect to dashboard
-    } else {
-        alert("Please enter your email and password.");
-    }
-});
+        if (email && password) {
+            window.location.href = "/static/dashboard.html"; // Redirect to dashboard
+        } else {
+            alert("Please enter your email and password.");
+        }
+    });
+}
 
 // Chatbot Logic
 const chatBox = document.getElementById("chat-box");
