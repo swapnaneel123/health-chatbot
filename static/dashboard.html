@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Whisper - Chatbot</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="/static/assests/logo.png" alt="Wellness Whisper Logo" class="logo">
+            <h1>Wellness Whisper</h1>
+        </div>
+        <div class="header-right">
+            <button class="logout">Logout</button>
+        </div>
+    </header>
+    <main>
+        <section class="chatbot-section">
+            <div class="chat-container">
+                <div class="chat-box" id="chat-box">
+                    <div class="chat-message bot-message">
+                        <p><strong>Wellness Whisper</strong></p>
+                        <p>Hi there! 👋 I'm here to help you feel better. What symptoms are you experiencing today?</p>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="user-input" placeholder="Type your symptoms here...">
+                    <button id="send-btn">Send</button>
+                    <button id="voice-btn">🎤</button>
+                </div>
+                <div class="binaural-controls">
+                    <label for="frequency-select">Select Binaural Beat Frequency:</label>
+                    <select id="frequency-select">
+                        <option value="alpha">Alpha (8-14 Hz) - Relaxation</option>
+                        <option value="beta">Beta (14-30 Hz) - Focus</option>
+                        <option value="theta">Theta (4-8 Hz) - Meditation</option>
+                        <option value="delta">Delta (0.5-4 Hz) - Deep Sleep</option>
+                    </select>
+                    <button id="start-beats">Start Binaural Beats</button>
+                    <button id="stop-beats">Stop Binaural Beats</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Wellness Whisper. All rights reserved.</p>
+    </footer>
+    <script src="/static/script.js"></script>
+</body>
+</html>
