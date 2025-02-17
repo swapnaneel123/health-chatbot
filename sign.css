@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; 
+    background: url('b3.jpg'); 
+    background-position: center; 
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    width: 750px; 
+    height: 85vh; 
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+} 
+
+.logo img { 
+    width: 200px; 
+    position: relative; 
+    top: 300px;
+}
+
+.left-panel {
+    width: 40%;
+    background: #0a3653;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.left-panel h2 {
+    font-size: 50px; 
+    margin-bottom: 15px; 
+    position: relative; 
+    top: -170px; 
+    font-family: 'Times New Roman';
+} 
+
+.left-panel h { 
+    position: relative; 
+    top: -80px; 
+    font-size: 26px; 
+    font-weight: bold; 
+    font-family: 'Georgia';
+} 
+
+.left-panel p { 
+    position: relative; 
+    top: -80px; 
+    font-size: 16px; 
+    font-family: 'Georgia';
+}
+
+.right-panel {
+    width: 60%;
+    padding: 30px;
+    overflow-y: auto; 
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group input {
+    width: 50%;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px; 
+    margin-bottom: 8px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #2980b9;
+    color: white;
+    padding: 8px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1c5985;
+}
+
+p {
+    text-align: center;
+    margin-top: 8px; 
+}
+
+p a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+} 
+
+p a:hover { 
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}

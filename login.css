@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /*background: linear-gradient(135deg, #1e3c72, #2a5298);*/ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background: url('b3.jpg') no-repeat; 
+    background-size: cover; 
+    background-position: center;
+}
+
+.container {
+    width: 40%;
+    max-width: 900px;
+    /*background: linear-gradient(135deg, #4facfe, #00f2fe);*/
+    background: transparent; 
+    backdrop-filter: blur(12px); 
+    border: 2px solid rgba(0, 0, 0, 0.742);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo img {
+    width: 120px; 
+}
+
+h1 {
+    font-size: 32px;
+    color: #08106c;
+    margin: 10px 0; 
+    position: relative; 
+    top: -5px; 
+    font-family: 'Times New Roman';
+}
+
+p {
+    color: #08106c;
+    font-size: 16px; 
+    position: relative; 
+    top: -15px;
+}
+
+
+form {
+    width: 114%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.733);
+}
+
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.47);
+    outline: none;
+    font-size: 16px; 
+    background: transparent; 
+    position: relative; 
+    left: -20px;
+}
+
+.options {
+    display: flex;
+    font-size: 14px;
+    color: #0b0101; 
+    position: relative; 
+    left: 20px;
+} 
+
+.options label { 
+    position: relative; 
+    left: -20px;
+}
+
+.options b { 
+    position: relative; 
+    left: -125px; 
+    top: 2px;
+}
+
+.options a {
+    color: #000000;
+    text-decoration: none; 
+    position: relative; 
+    left: 97px;
+} 
+
+.options a:hover {
+    text-decoration: underline;  
+}
+
+.buttons {
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
+}
+
+.login-btn {
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s; 
+    position: relative; 
+    left: -20px; 
+    flex-grow: 0.8;
+}
+
+.login-btn {
+    background: #007bff;
+    color: #fff;
+}
+
+
+.login-btn:hover {
+    background: #0056b3;
+}
+
+
+p {
+    text-align: center;
+    margin-top: 8px; 
+    color: #000000; 
+}
+
+p a {
+    color: #050c6d;
+    text-decoration: none;
+    font-weight: bold;
+} 
+
+p a:hover { 
+    text-decoration: underline;
+}
