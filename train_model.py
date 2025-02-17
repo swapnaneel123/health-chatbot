@@ -6,7 +6,7 @@ from transformers import DistilBertTokenizer, DistilBertForSequenceClassificatio
 import torch
 
 # Load the dataset
-df = pd.read_csv("Symptom2Disease.csv")
+df = pd.read_csv("health-chatbot\Symptom2Disease.csv")
 df['text'] = df['label'] + " " + df['text']  # Combine label and text
 df = df[['text', 'label']]
 

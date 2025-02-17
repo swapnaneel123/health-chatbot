@@ -9,7 +9,7 @@ import joblib
 import pickle
 
 # Load dataset
-df = pd.read_csv("D:/hack2/dataset.csv")
+df = pd.read_csv("health-chatbot\dataset.csv")
 
 # Convert 'cures' column into multi-label format
 df["cures"] = df["cures"].apply(lambda x: x.split(","))  # Convert string to list
@@ -32,7 +32,7 @@ dt_model.fit(X_train, y_train)
 # Predictions and evaluation
 y_pred = dt_model.predict(X_test)
 
-joblib.dump(dt_model,"D:/hack2/cure_trained.pkl")
+joblib.dump(dt_model,"health-chatbot\cure_trained.pkl")
 
 # Compute accuracy for each label
 accuracy = (y_pred == y_test).mean().mean()
